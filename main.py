@@ -27,7 +27,7 @@ class LDA:
         self.bound = 0  # the variational bound
         self.token_bound = 0
 
-    def fit(self, X, tolerance=1e-4, max_epochs=100, initial_smoothing=1.0, n_initial_docs=1,
+    def fit(self, X, tolerance=1e-4, max_epochs=10, initial_smoothing=1.0, n_initial_docs=1,
             max_inner_iterations=20, inner_tol=1e-6, vocab=None, display_topics=False):
         """
         fit a model to data
