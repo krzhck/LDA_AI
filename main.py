@@ -267,15 +267,9 @@ def update_params_for_one_item(K, n_word_types, word_indices, counts, gammas, ph
             w = word_indices[n]
             c = counts[n]
 
-            ##########################################################################
-            # TODO: update variational parameters inplace: gamma and phi             #
-            #                                                                        #
-            #                                                                        #
-            #                                                                        #
-            ##########################################################################
-
-            ## Your codes here.
-
+            gammas += c*(np.exp(log_betas[w]+psi_gammas - logsumexp(log_betas[w]+psi_gammas)) - phi_d[n])
+            phi_d[n] = np.exp(log_betas[w]+psi_gammas - logsumexp(log_betas[w]+psi_gammas))
+            psi_gammas = psi(gammas)
             n += 1
 
         # compute the part of the variational bound corresponding to this document
@@ -308,14 +302,17 @@ def compute_bound_for_one_item(K, n_word_types, word_indices, count_vector, alph
 
     bound = 0.0
 
-    ##########################################################################
-    # TODO: calculate ELBO, return it as bound                               #
-    #                                                                        #
-    #                                                                        #
-    #                                                                        #
-    ##########################################################################
-
-    ## Your codes here.
+    phi_sum = 0
+    for i in range(n_word_types):
+        phi_sum = phi_sum + np.sum(phi_d[i]* (psi(gammas) -  psi(np.sum(gammas))))
+    bound = gammaln(K * alpha)
+    - K * gammaln(alpha)
+    + (alpha - 1) * (np.sum(psi_gammas)
+    - K * psi(np.sum(gammas)))
+    + phi_sum + np.sum(phi_d * log_betas[word_indices, :])
+    - gammaln(np.sum(gammas)) + np.sum(gammaln(gammas))
+    - np.sum((gammas - 1) * (psi(gammas) - psi(np.sum(gammas))))
+    - np.sum(phi_d* np.log(phi_d + 1e-5))
 
     return bound
 
@@ -323,6 +320,7 @@ def compute_bound_for_one_item(K, n_word_types, word_indices, count_vector, alph
 if __name__ == "__main__":
     from utils import preprocess
 
-    docs, _, vocab = preprocess("./dataset/dataset_cn_full.txt")
+    #docs, _, vocab = preprocess("./dataset/dataset_cn_full.txt")
+    docs, _, vocab = preprocess("./dataset/dataset.txt")
     lda = LDA(K=10, V=len(vocab))
     lda.fit(docs, vocab=vocab, display_topics=True)

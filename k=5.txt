@@ -1,0 +1,237 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/r2/gvr8lv7d31d84sj97lrfm35m0000gn/T/jieba.cache
+Loading model cost 0.454 seconds.
+Prefix dict has been built successfully.
+Iter bound	LL/token	Delta
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.82665	-9388868.97587	-95381.96425
+alpha maximization: 13.58677	-3366964.31010	-95209.14715
+alpha maximization: 5.03811	-1158034.55466	-94735.32594
+alpha maximization: 1.89541	-351959.82159	-93418.81473
+alpha maximization: 0.74485	-62313.82539	-89663.98389
+alpha maximization: 0.33325	36688.45355	-78876.34880
+alpha maximization: 0.19957	65336.05308	-52860.57996
+alpha maximization: 0.16940	70480.61059	-17726.78510
+alpha maximization: 0.16716	70784.22824	-1463.81668
+alpha maximization: 0.16715	70785.88480	-8.81325
+alpha maximization: 0.16715	70785.88485	-0.00032
+alpha maximization: 0.16715	70785.88485	0.00000
+0	-9487749.147	-7.590	inf
+0 孩子 发生 告诉 学生 工作 医院 学校 男子
+1 司机 女士 乘客 出租车 公司 一位 报道 开车
+2 男子 民警 警方 嫌疑人 妻子 犯罪 王某 标题
+3 老板 公司 网吧 万元 网上 学生 情况 民警
+4 发现 警方 老人 民警 父亲 手机 现场 女儿
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.81280	-14649646.91950	-148521.13539
+alpha maximization: 13.56772	-5268709.08567	-148348.21508
+alpha maximization: 5.01683	-1824067.96716	-147873.43325
+alpha maximization: 1.87248	-563423.14649	-146548.90291
+alpha maximization: 0.71916	-106621.03784	-142725.49437
+alpha maximization: 0.30199	53628.86794	-131327.55470
+alpha maximization: 0.15903	104001.00786	-100756.09951
+alpha maximization: 0.11901	115452.00818	-47501.25179
+alpha maximization: 0.11356	116639.01397	-7833.69089
+alpha maximization: 0.11344	116661.16287	-176.30936
+alpha maximization: 0.11344	116661.17339	-0.08627
+alpha maximization: 0.11344	116661.17339	-0.00000
+1	-7976493.605	-6.310	0.15928
+0 孩子 学生 老师 学校 家长 医院 告诉 工作
+1 司机 女士 乘客 车辆 公司 交警 公交车 报道
+2 男子 民警 警方 嫌疑人 发现 犯罪 派出所 妻子
+3 公司 万元 发现 情况 相关 学生 工作人员 老板
+4 发现 老人 警方 父亲 女儿 手机 母亲 医院
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80656	-19584876.34763	-198371.93770
+alpha maximization: 13.55913	-7052768.20649	-198198.97078
+alpha maximization: 5.00724	-2448879.87604	-197723.75473
+alpha maximization: 1.86217	-761782.12005	-196395.58593
+alpha maximization: 0.70767	-148129.02893	-192540.70597
+alpha maximization: 0.28814	69708.76844	-180852.65743
+alpha maximization: 0.14122	140865.50553	-147886.89279
+alpha maximization: 0.09619	158982.38862	-82600.12484
+alpha maximization: 0.08798	161470.64245	-19590.06787
+alpha maximization: 0.08763	161557.03459	-881.18124
+alpha maximization: 0.08763	161557.18965	-1.67525
+alpha maximization: 0.08763	161557.18965	-0.00001
+2	-7850392.831	-6.215	0.01581
+0 孩子 学生 老师 学校 医院 家长 告诉 工作
+1 司机 女士 车辆 乘客 交警 发生 公司 事故
+2 民警 男子 警方 嫌疑人 发现 犯罪 派出所 女子
+3 公司 万元 发现 相关 快递 情况 工作人员 介绍
+4 老人 发现 法院 警方 父亲 儿子 女儿 母亲
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80368	-23183511.26715	-234721.78537
+alpha maximization: 13.55516	-8353655.16688	-234548.79695
+alpha maximization: 5.00282	-2904474.24464	-234073.38035
+alpha maximization: 1.85742	-906415.47306	-232743.52832
+alpha maximization: 0.70239	-178381.17977	-228874.01320
+alpha maximization: 0.28180	81481.57908	-217048.84696
+alpha maximization: 0.13315	167905.06823	-182896.12824
+alpha maximization: 0.08577	191127.48419	-110894.00274
+alpha maximization: 0.07586	194785.03609	-31562.27105
+alpha maximization: 0.07527	194957.45002	-2015.84809
+alpha maximization: 0.07527	194958.04768	-7.57037
+alpha maximization: 0.07527	194958.04769	-0.00011
+alpha maximization: 0.07527	194958.04769	-0.00000
+3	-7827202.311	-6.199	0.00295
+0 孩子 学生 老师 学校 医院 家长 医生 告诉
+1 司机 女士 车辆 交警 乘客 发生 事故 公司
+2 民警 男子 警方 嫌疑人 发现 派出所 犯罪 女子
+3 公司 万元 发现 快递 相关 工作人员 银行 情况
+4 老人 法院 发现 儿子 父亲 母亲 女儿 警方
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80212	-25728612.56731	-260429.87931
+alpha maximization: 13.55303	-9273695.34276	-260256.87930
+alpha maximization: 5.00044	-3226688.72781	-259781.35462
+alpha maximization: 1.85486	-1008704.73559	-258450.59464
+alpha maximization: 0.69955	-199772.55300	-254573.16513
+alpha maximization: 0.27840	89821.83452	-242673.25707
+alpha maximization: 0.12884	187076.50047	-207858.03099
+alpha maximization: 0.08020	213991.13504	-131872.29381
+alpha maximization: 0.06926	218564.20497	-41597.48073
+alpha maximization: 0.06848	218819.95264	-3243.06457
+alpha maximization: 0.06848	218821.23434	-17.89660
+alpha maximization: 0.06848	218821.23437	-0.00054
+alpha maximization: 0.06848	218821.23437	0.00000
+4	-7818243.501	-6.192	0.00114
+0 孩子 学生 老师 学校 医院 家长 医生 告诉
+1 司机 女士 车辆 交警 乘客 发生 事故 发现
+2 民警 男子 警方 嫌疑人 发现 派出所 犯罪 女子
+3 公司 万元 发现 银行 快递 相关 工作人员 工作
+4 法院 老人 发现 儿子 母亲 父亲 女儿 死亡
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80126	-27392985.38562	-277241.72596
+alpha maximization: 13.55184	-9875356.96306	-277068.71953
+alpha maximization: 4.99912	-3437401.23682	-276593.13500
+alpha maximization: 1.85344	-1075596.52256	-275261.87197
+alpha maximization: 0.69798	-213760.13080	-271380.05147
+alpha maximization: 0.27652	95280.48672	-259438.49555
+alpha maximization: 0.12647	199629.35773	-224249.26856
+alpha maximization: 0.07715	228986.45789	-145936.82236
+alpha maximization: 0.06559	234191.84150	-48803.99035
+alpha maximization: 0.06468	234512.50869	-4264.70819
+alpha maximization: 0.06467	234514.48887	-29.30905
+alpha maximization: 0.06467	234514.48897	-0.00137
+alpha maximization: 0.06467	234514.48897	-0.00000
+5	-7813386.888	-6.188	0.00062
+0 孩子 学生 医院 学校 老师 家长 医生 告诉
+1 司机 女士 车辆 交警 发生 乘客 事故 现场
+2 民警 男子 警方 嫌疑人 发现 派出所 犯罪 女子
+3 公司 万元 发现 银行 快递 工作人员 相关 工作
+4 法院 老人 儿子 发现 母亲 父亲 女儿 死亡
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80080	-28386718.26461	-287279.43181
+alpha maximization: 13.55120	-10234585.92289	-287106.42191
+alpha maximization: 4.99840	-3563209.51489	-286630.80497
+alpha maximization: 1.85268	-1115534.89863	-285299.26955
+alpha maximization: 0.69713	-222111.16048	-281415.06967
+alpha maximization: 0.27551	98541.03753	-269450.89170
+alpha maximization: 0.12519	207129.06316	-234057.05146
+alpha maximization: 0.07550	237953.39908	-154447.29570
+alpha maximization: 0.06360	243547.68483	-53334.84516
+alpha maximization: 0.06260	243911.06849	-4963.42136
+alpha maximization: 0.06260	243913.58470	-38.49187
+alpha maximization: 0.06260	243913.58485	-0.00229
+alpha maximization: 0.06260	243913.58485	0.00000
+6	-7810191.036	-6.186	0.00041
+0 孩子 学生 医院 学校 老师 家长 医生 告诉
+1 司机 女士 车辆 交警 发生 乘客 事故 现场
+2 民警 男子 警方 嫌疑人 发现 派出所 犯罪 女子
+3 公司 万元 发现 银行 快递 工作人员 相关 工作
+4 法院 老人 儿子 发现 母亲 父亲 女儿 死亡
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80053	-28985638.05601	-293329.12667
+alpha maximization: 13.55084	-10451092.12373	-293156.11479
+alpha maximization: 4.99800	-3639033.76895	-292680.47939
+alpha maximization: 1.85224	-1139605.59424	-291348.78878
+alpha maximization: 0.69665	-227144.16790	-287463.23264
+alpha maximization: 0.27493	100506.61126	-275486.14306
+alpha maximization: 0.12446	211650.68596	-239975.05398
+alpha maximization: 0.07456	243362.24501	-159614.02279
+alpha maximization: 0.06247	249194.76349	-56144.72150
+alpha maximization: 0.06142	249585.31929	-5417.79302
+alpha maximization: 0.06141	249588.20734	-45.04004
+alpha maximization: 0.06141	249588.20753	-0.00308
+alpha maximization: 0.06141	249588.20753	-0.00000
+7	-7807744.736	-6.183	0.00031
+0 孩子 学生 医院 学校 老师 家长 医生 告诉
+1 司机 女士 车辆 交警 发生 乘客 事故 现场
+2 民警 男子 警方 嫌疑人 发现 派出所 犯罪 女子
+3 公司 万元 发现 银行 工作人员 快递 相关 工作
+4 法院 老人 儿子 发现 母亲 父亲 女儿 死亡
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80040	-29298773.86690	-296492.11466
+alpha maximization: 13.55065	-10564288.99109	-296319.10178
+alpha maximization: 4.99779	-3678677.28610	-295843.45703
+alpha maximization: 1.85202	-1152190.56768	-294511.68779
+alpha maximization: 0.69640	-229775.55963	-290625.44434
+alpha maximization: 0.27464	101534.40663	-278641.80691
+alpha maximization: 0.12409	214015.18727	-243071.12799
+alpha maximization: 0.07409	246191.44517	-162326.05498
+alpha maximization: 0.06189	252149.62707	-57636.96216
+alpha maximization: 0.06082	252554.81577	-5665.50806
+alpha maximization: 0.06081	252557.91387	-48.79699
+alpha maximization: 0.06081	252557.91410	-0.00358
+alpha maximization: 0.06081	252557.91410	-0.00000
+8	-7805932.833	-6.182	0.00023
+0 孩子 学生 医院 学校 老师 家长 医生 告诉
+1 司机 车辆 女士 交警 发生 乘客 现场 事故
+2 民警 男子 警方 嫌疑人 发现 派出所 犯罪 报警
+3 公司 万元 发现 银行 工作人员 快递 相关 工作
+4 法院 老人 儿子 母亲 发现 父亲 女儿 死亡
+1000
+2000
+3000
+4000
+alpha	L(alpha)	dL(alpha)
+alpha maximization: 36.80035	-29406090.50568	-297576.12111
+alpha maximization: 13.55059	-10603083.36355	-297403.10789
+alpha maximization: 4.99772	-3692263.75141	-296927.45998
+alpha maximization: 1.85194	-1156503.63707	-295595.66418
+alpha maximization: 0.69632	-230677.37388	-291709.18851
+alpha maximization: 0.27454	101886.66774	-279723.33799
+alpha maximization: 0.12397	214825.60709	-244132.49874
+alpha maximization: 0.07393	247161.25176	-163257.15763
+alpha maximization: 0.06170	253162.67191	-58151.98656
+alpha maximization: 0.06061	253572.94280	-5752.02391
+alpha maximization: 0.06060	253576.11546	-50.13984
+alpha maximization: 0.06060	253576.11569	-0.00376
+alpha maximization: 0.06060	253576.11569	-0.00000
+9	-7804584.063	-6.180	0.00017

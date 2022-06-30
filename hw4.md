@@ -38,6 +38,8 @@ $$
 &因此\ \mathop{\arg\max}\limits_\theta J(\theta)=\mathop{\arg\max}\limits_\theta\sum\limits_ZP(X,Z|\theta^{(i)})\log P(X,Z|\theta)
 \end{align*}
 $$
+<div style="page-break-after: always;"></div>
+
 **(b)**
 $$
 \begin{align*}
@@ -93,6 +95,8 @@ l(b_j(k),\eta)&=\sum\limits_{j=1}\limits^N\sum\limits_{t=1}\limits^{T}\log b_{z_
 \end{align*}
 $$
 
+<div style="page-break-after: always;"></div>
+
 **(d)**
 $$
 \begin{align*}
@@ -117,12 +121,10 @@ $$
 ```pseudocode
 init theta = (pi(0), A(0), B(0)), n = 0
 while n < max and theta is not best
-{
 	a_ij(n+1) = sum(xi_t[i][j])/sum(gamma_t[i])
 	b_j[k](n+1) = sum(gamma_t[j])/sum(gamma_t[j])
 	pi_i(n+1) = gamma_1(i)
 	n = n + 1
-}
 return theta = (pi, A, B)
 ```
 
@@ -130,3 +132,76 @@ return theta = (pi, A, B)
 
 ## 3 LDA 实现
 
+**(a)**
+
+```pseudocode
+init params
+while epoch < max_epochs and delta > tolerance
+	while d < D
+		while i < max_iter_d and delta >= tol_d
+			for n = 0 to n_word_types
+				compute phi
+		compute gamma
+		update bound
+	update log_betas
+	update alpha
+	compute delta
+	store new value of bound
+	output
+```
+
+**(b)** 见 main.py
+
+**(c)**
+
+K = 5
+
+```
+0 孩子 学生 医院 学校 老师 家长 医生 告诉
+1 司机 车辆 女士 交警 发生 乘客 现场 事故
+2 民警 男子 警方 嫌疑人 发现 派出所 犯罪 报警
+3 公司 万元 发现 银行 工作人员 快递 相关 工作
+4 法院 老人 儿子 母亲 发现 父亲 女儿 死亡
+```
+
+K = 10
+
+```
+0 学生 学校 老师 网友 同学 家长 女生 微博
+1 医院 医生 治疗 手术 患者 检查 情况 病人
+2 民警 警方 嫌疑人 男子 手机 犯罪 发现 李某
+3 男子 司机 民警 车辆 发生 交警 现场 事故
+4 警方 民警 男子 发现 女子 老人 派出所 调查
+5 公司 万元 银行 发现 女士 工作人员 电话 快递
+6 游客 李桂英 村民 发现 动物 保护 多年 村里
+7 孩子 儿子 家长 妈妈 父母 女儿 父亲 家里
+8 法院 赔偿 母亲 父亲 判决 女儿 离婚 妻子
+9 工作 中国 时间 报道 美国 社会 公司 生活
+```
+
+K = 20
+
+```
+0 孩子 家长 女儿 幼儿园 女士 儿子 妈妈 老师
+1 离婚 结婚 丈夫 两人 妻子 生活 男友 父母
+2 儿子 父亲 母亲 孩子 父母 家里 女儿 家人
+3 万元 公司 美国 银行 女性 工作 女士 介绍
+4 公司 法院 赔偿 女士 万元 手机 被告 证明
+5 医院 医生 患者 价格 发现 治疗 检查 市场
+6 司机 车辆 交警 乘客 公交车 现场 发生 男子
+7 嫌疑人 犯罪 警方 公安局 视频 案件 民警 调查
+8 学生 学校 老师 家长 同学 网友 孩子 女生
+9 游客 导游 旅游 旅行社 景区 刘先生 发现 标准
+10 民警 男子 派出所 发现 警方 交警 处罚 旅客
+11 法院 房屋 被告人 判处 判决 有期徒刑 证据 拆迁
+12 小区 女子 业主 物业 居民 发现 保安 现场
+13 医院 医生 手术 男子 治疗 家属 患者 发生
+14 报道 动物 保护 英国 一只 中国 野生动物 发现
+15 男子 民警 警方 李某 王某 妻子 发现 嫌疑人
+16 警方 工作 发现 调查 人员 电话 死亡 公司
+17 事故 发生 车辆 救援 驾驶 责任 保险公司 现场
+18 老人 大爷 师傅 儿子 发现 老伴 下午 老太
+19 手机 民警 发现 警方 盗窃 嫌疑人 超市 男子
+```
+
+**(d)** 分类效果最好的 K = 20，因为数据集本身文本量大，主题数量较多，如果 K 取值过小就会因 topic 过少导致分类效果不佳，选用较大的 K 分类更为精准细致。
